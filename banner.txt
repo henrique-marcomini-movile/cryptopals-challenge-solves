@@ -1,0 +1,18 @@
+████████╗ ██████╗ ██████╗ ██████╗███████╗██████╗ 
+╚══██╔══╝██╔════╝██╔════╝██╔════╝██╔════╝██╔══██╗
+   ██║   ██║     ██║     ██║     █████╗  ██████╔╝
+   ██║   ██║     ██║     ██║     ██╔══╝  ██╔═══╝ 
+   ██║   ╚██████╗╚██████╗╚██████╗██║     ██║     
+   ╚═╝    ╚═════╝ ╚═════╝ ╚═════╝╚═╝     ╚═╝     
+                                                  
+
+            
+
+      Challenges made by 
+            Thomas Ptacek (@tqbf)
+            Sean Devlin (@spdevlin)
+            Alex Balducci (@iamalexalright)
+            Marcin Wielgoszewski (@marcinw)
+
+      Test Suite made by:
+            Supitto
