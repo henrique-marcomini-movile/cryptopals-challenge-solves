@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+
+"""
+The Cryptopals Crypto Challenges For Python
+
+Usage:
+  tcccfp all [--no-banner]
+  tcccfp set <set_number> [--no-banner]
+  tcccfp chall <chall_number> [--no-banner]
+  tcccfp -h | --version
+
+Commands:
+  all         Tests every challenge.
+  set         Tests every challenge of a set.
+  chall       Tests a single challenge.
+
+Options:
+  -h --help     Show this screen.
+  --version     Show version.
+  --no-banner   Does not displays the beautiful banner
+
+"""
+
+from docopt import docopt
+import unittest
+import sys
+import os
+
+cur_dir = os.getcwd()
+if cur_dir not in sys.path:
+	sys.path.append(cur_dir)
+
+def print_banner():
+    with open("banner.txt", 'r') as f:
+        print(f.read())
+        print('\n\n')
+
+
+if __name__ == "__main__":
+    args = docopt(__doc__)
+
+    if not args['--no-banner']:
+        print_banner()
+
+    print("Running Set 1")
+    print("Running Challenge 1")
+    unittest.main("challenges.set1.c1.solve",exit=False)
+    print("Running Challenge 2")
+    unittest.main("challenges.set1.c2.solve",exit=False)
+    print("Running Challenge 3")
+    unittest.main("challenges.set1.c3.solve",exit=False)
+    print("Running Challenge 4")
+    unittest.main("challenges.set1.c4.solve",exit=False)
+    print("Running Challenge 5")
+    #unittest.main("challenges.set1.c5.solve",exit=False)
+    print("Challenge 5 is not working yet")
+    print("Running Challenge 6")
+    unittest.main("challenges.set1.c6.solve",exit=False)
+    print("Running Challenge 7")
+    unittest.main("challenges.set1.c7.solve",exit=False)
+    print("Running Challenge 8")
+    unittest.main("challenges.set1.c8.solve",exit=False)
+
+
