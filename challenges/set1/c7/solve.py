@@ -1,10 +1,10 @@
 from aux.cypher.aes import AES
 from aux.base64 import decode
 import pprint
-import unittest
+import test_suite
 
 
-class Testing(unittest.TestCase):
+class Testing(test_suite.TestCase):
     def test_challenge(self):
 
         with open('challenges/set1/c7/input.txt', 'r') as f:

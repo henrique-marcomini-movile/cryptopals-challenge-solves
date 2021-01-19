@@ -2,10 +2,10 @@ import pprint
 from aux import hamming_distance_bytes, extend_bytes_to_match
 from aux.base64 import encode, decode
 from aux.cypher.simple import break_single_byte_xor, xor_bytes
-import unittest
+import test_suite
 
 
-class Testing(unittest.TestCase):
+class Testing(test_suite.TestCase):
 
     def test_challenge(self):
 

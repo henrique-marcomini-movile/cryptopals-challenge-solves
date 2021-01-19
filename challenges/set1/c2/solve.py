@@ -1,9 +1,9 @@
 from aux.cypher.simple import xor_bytes
-import unittest
+import test_suite
 from aux import hex2bytes, bytes2hex
 
 
-class Testing(unittest.TestCase):
+class Testing(test_suite.TestCase):
 
     def test_vector1(self):
         a = bytes(10)

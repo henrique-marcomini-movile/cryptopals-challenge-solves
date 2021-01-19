@@ -1,14 +1,14 @@
-import unittest
+import test_suite
 from aux.base64 import encode, decode
 from aux import hex2bytes, bytes2hex
 
 
-class Testing(unittest.TestCase):
+class Testing(test_suite.TestCase):
 
     def test_vector1(self):
         text = b""
         expected = b""
-        actual = encode(b"")
+        actual = encode(text)
         self.assertEqual(expected, actual)
 
     def test_vector2(self):
